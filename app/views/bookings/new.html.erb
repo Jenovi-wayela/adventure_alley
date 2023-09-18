@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1>Make a booking</h1>
+
+  <%= simple_form_for @booking, url: bookings_path do |f| %>
+    <%= f.input :status, as: :select, collection: Booking.statuses.keys, label: 'Status' %>
+    <%= f.button :submit, "Create Booking", class: "btn btn-success" %>
+  <% end %>
+
+  # Babes, You need to link_to some path to view your bookings. 
+  <%# <%= link_to "Back to Dashboard" dashboard_bookings_path %>
+</div>
