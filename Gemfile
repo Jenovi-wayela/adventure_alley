@@ -8,7 +8,6 @@ gem "rails", "~> 7.0.8"
 
 gem "psych", "~> 5.1.0"
 
-
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
@@ -26,7 +25,6 @@ gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
-
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -52,8 +50,6 @@ gem "sassc-rails"
 gem "devise"
 
 gem 'faker'
-
-
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
