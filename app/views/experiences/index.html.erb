@@ -1,5 +1,18 @@
 <h1>WELCOME TO ADVENTURE ALLEY</h1>
 
+<div class="category-list">
+  <ul>
+    <% @categories.each do |category| %>
+      <li>
+        <%= link_to category, experiences_path(category: category) %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<div class="experiences-list">
+  <!-- Experiences for the selected category will be displayed here -->
+  <%= render partial: "experiences", locals: { experiences: @experiences, category: params[:category] } %>
+</div>
 
 <%= link_to 'Sign up', experiences_path %>
-
