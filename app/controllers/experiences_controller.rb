@@ -1,9 +1,11 @@
 class ExperiencesController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
+
   def index
   end
 
   def new
-      @experience = Experience.new
+    @experience = Experience.new
   end
 
   def create
