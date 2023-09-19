@@ -1,5 +1,19 @@
 <h1>WELCOME TO ADVENTURE ALLEY</h1>
 <p>All experiences</p>
 
+<div class="experiences-container">
+  <% @experiences.each do |experience| %>
+    <%= link_to  experience_path(experience) do %>
+      <div class="experience-card">
+        <h1><%= experience.title %></h1>
+        <p><%= experience.description %></p>      
+      </div>
+    <% end %>
+  <% end %>
 
-<%= link_to 'Sign up', experiences_path %>
+
+
+</div>
+
+<%= link_to 'Sign up', new_user_registration_path %>
+<%= link_to 'Sign up', new_user_registration_path %> 

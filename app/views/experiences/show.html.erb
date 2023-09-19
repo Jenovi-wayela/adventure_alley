@@ -8,7 +8,8 @@
 
   <%= simple_form_for @booking, url: bookings_path do |f| %>
     <%= f.hidden_field :experience_id, value: @experience.id %>
-    <%= f.input :date, as: :date_picker, label: 'Select Date' %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
     <%= f.button :submit, "Book Now", class: "btn btn-primary" %>
   <% end %>
 

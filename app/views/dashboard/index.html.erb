@@ -1,7 +1,7 @@
 
 <div class="container">
     <div class="row justify-content-start">
-    <div class="col-4">
+        <div class="col-4">
             <h1>Dashboard</h1>
             <h3>Your Experiences</h3>
             <ul>
@@ -18,9 +18,9 @@
             <h3>Your Bookings</h3>
             <ul>
                 <% @bookings.each do |booking| %>
-                    <li>Status: <%= booking.status %></li>
+                    <li><%= booking.experience.title %> Status: <%= booking.status %></li>
                 <% end %>
             </ul>
-    </div>
+        </div>
     </div>
 </div>
