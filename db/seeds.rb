@@ -20,32 +20,32 @@ end
 
 
 Experience.create!(category: "Eating",
-                   title: "Gourmet Dinner",
-                   description: "Indulge in a delicious gourmet dinner experience.",
-                   date: Date.today + 10,
-                   location: "New York City, NY",
-                   capacity: 20,
-                   price: 100.0,
-                   user: User.all.sample)
+                  title: "Gourmet Dinner",
+                  description: "Indulge in a delicious gourmet dinner experience.",
+                  date: Date.today + 10,
+                  location: "New York City, NY",
+                  capacity: 20,
+                  price: 100.0,
+                  user: User.all.sample)
 
 
 Experience.create!(category: "Eating",
-                   title: "Street Food Adventure",
-                   description: "Explore the city's best street food vendors.",
-                   date: Date.today + 15,
-                   location: "Los Angeles, CA",
-                   capacity: 15,
-                   price: 50.0,
-                   user: User.all.sample)
+                  title: "Street Food Adventure",
+                  description: "Explore the city's best street food vendors.",
+                  date: Date.today + 15,
+                  location: "Los Angeles, CA",
+                  capacity: 15,
+                  price: 50.0,
+                  user: User.all.sample)
 
 Experience.create!(category: "Eating",
-                   title: "Vegan Food Tasting",
-                   description: "Discover the flavors of vegan cuisine.",
-                   date: Date.today + 18,
-                   location: "San Francisco, CA",
-                   capacity: 15,
-                   price: 65.0,
-                   user: User.all.sample)
+                  title: "Vegan Food Tasting",
+                  description: "Discover the flavors of vegan cuisine.",
+                  date: Date.today + 18,
+                  location: "San Francisco, CA",
+                  capacity: 15,
+                  price: 65.0,
+                  user: User.all.sample)
 
 Experience.create!(category: "Eating",
                   title: "Farm-to-Table Dinner",

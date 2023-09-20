@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'categories/show'
     # ...
     get 'dashboard/bookings', to: 'dashboard#bookings'
     get 'dashboard/listings', to: 'dashboard#listings'
@@ -8,5 +9,6 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
   resources :experiences, only: [:index, :new, :create, :show]
+  resources :categories, only: [:show]
   root to: "experiences#index"
 end
