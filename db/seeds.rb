@@ -19,7 +19,6 @@ User.destroy_all
   )
 end
 
-
 Experience.create!(category: "Eating",
                    title: "Gourmet Dinner",
                    description: "Indulge in a delicious gourmet dinner experience.",
@@ -28,7 +27,6 @@ Experience.create!(category: "Eating",
                    capacity: 20,
                    price: 100.0,
                    user: User.all.sample)
-
 
 Experience.create!(category: "Eating",
                    title: "Street Food Adventure",
