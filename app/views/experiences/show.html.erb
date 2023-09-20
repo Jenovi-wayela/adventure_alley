@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" class="mx-auto" style="width: 500px;">
   <h1><%= @experience.title %></h1>
   <p><%= @experience.description %></p>
   <p><strong>Price:</strong> $<%= @experience.price %></p>
@@ -8,8 +8,6 @@
 
   <%= simple_form_for @booking, url: bookings_path do |f| %>
     <%= f.hidden_field :experience_id, value: @experience.id %>
-    <%= f.input :start_date %>
-    <%= f.input :end_date %>
     <%= f.button :submit, "Book Now", class: "btn btn-primary" %>
   <% end %>
 
