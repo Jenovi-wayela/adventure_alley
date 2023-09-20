@@ -14,6 +14,11 @@ class ExperiencesController < ApplicationController
     @experience = Experience.new
   end
 
+  def show
+    @experience = Experience.find(params[:id])
+    @booking = Booking.new
+  end
+
   def create
     @experience = Experience.new(experience_params)
     if @experience.save
