@@ -6,11 +6,23 @@
   <p><strong>Location:</strong> <%= @experience.location %></p>
   <p><strong>Capacity:</strong> <%= @experience.capacity %></p>
 
+
+<h2>Bookings for this experience:</h2>
+<ul>
+  <% @bookings.each do |booking| %>
+    <li>
+      Date: <%= booking.start_date %><br>
+      User: <%= booking.user.first_name %>
+      experience: <%= booking.experience.title %>
+    </li>
+  <% end %>
+</ul>
+
+
   <%= simple_form_for @booking, url: bookings_path do |f| %>
     <%= f.hidden_field :experience_id, value: @experience.id %>
     <%= f.button :submit, "Book Now", class: "btn btn-primary" %>
   <% end %>
-
 </div>
 
 
