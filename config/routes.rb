@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "experiences#index"
     # ...
     get 'dashboard/bookings', to: 'dashboard#bookings'
     get 'dashboard/listings', to: 'dashboard#listings'
@@ -9,5 +10,4 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
 
   resources :experiences, only: [:index, :new, :create, :show]
-  root to: "experiences#index"
 end
